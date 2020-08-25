@@ -1,0 +1,10 @@
+if(head == null)
+    return null;
+Node a = head;
+while(a.next != null){
+    if(a.data == a.next.data)
+        a.next = a.next.next;
+    else
+        a = a.next;
+} 
+return head;
